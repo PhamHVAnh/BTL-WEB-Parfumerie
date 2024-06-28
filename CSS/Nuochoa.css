@@ -1,0 +1,293 @@
+/* Nước hoa */
+.breadcrumb {
+    font-size: 15px;
+    margin-top: 70px;
+    background-color: rgba(255, 255, 254, 0.838);
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px; /* Adjust vertical padding */
+    text-align: left;
+}
+
+.Tim button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    padding: 8px;
+    size: 100px;
+    margin: -40px 220px ;
+    background-color: #034e3f;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+
+}
+
+.filter-section h3 {
+    margin-top: 5px;
+}
+
+.filter-section input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.scrollable {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 6px;
+}
+
+.scrollable ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scrollable ul li {
+    margin-bottom: 20px;
+}
+
+#List ul, #List li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-right: none;
+}
+
+#List ul>li {
+    position: relative;
+    padding: 10px 15px;
+    color: rgb(7, 7, 7);
+}
+
+#List ul li .submenu {
+    display: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* #List ul li:focus-within .submenu {
+    display: block;
+} */
+#List ul li:hover .submenu{
+    display: block;
+}
+
+#List ul li ul li {
+    padding: 10px 0;
+}
+.has-submenu > a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.products {
+    flex: 0.95;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.products-header {
+    display: flex;
+    align-items: center;
+}
+
+.sort-options {
+    display: flex;
+    gap: 10px;
+    padding-right: 240px ;
+}
+
+.sort-options label {
+    cursor: pointer;
+}
+
+.view-options {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    gap: 10px;
+}
+
+.view-options a i {
+    margin-right: 5px; /* Add margin to the right of the icon */
+}
+.view-options a {
+    display: flex;
+    align-items: center; /* Center align text vertically */
+    justify-content: center; /* Center align text horizontally */
+    border: 1px solid #d9dedd; /* Add border */
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px; /* Adjust padding to desired space */
+    transition: background-color 0.3s ease;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    /* border: 1px solid #ddd; */
+    margin: 0 2px;
+    display: inline-block;
+    color: #858383;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+/* Sản phẩm bên trong */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Reduce gap to make items closer */
+    margin-top: 20px;
+}
+
+.product-item {
+    position: relative;
+    padding: 15px; /* Reduce padding to make images larger */
+    text-align: left; /* Center text */
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.product-item img {
+    width: 100%; /* Ensure images take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are displayed as block elements */
+    margin-bottom: 10px; /* Space between image and title */
+}
+.product-item h3 {
+    font-size: 13px;
+    height: 3em; /* Điều chỉnh chiều cao tùy theo độ dài tiêu đề bạn muốn */
+    overflow: hidden; /* Đảm bảo rằng tiêu đề không vượt quá chiều cao cố định */
+    text-overflow: ellipsis; /* Thêm dấu ba chấm nếu tiêu đề quá dài */
+    display: -webkit-box; /* Cho phép sử dụng thuộc tính -webkit-line-clamp */
+    -webkit-line-clamp: 1; /* Hiển thị tối đa 2 dòng, điều chỉnh số dòng tùy thích */
+    -webkit-box-orient: vertical;
+}
+
+.product-item span {
+    color: #034e3f; /* Màu xanh lá cho giá */
+    margin-top: 10px; /* Khoảng cách giữa <p> và <span> */
+    text-align: left;
+    width: 100%; /* Đảm bảo tất cả các <span> có cùng độ rộng */
+    display: block;
+    
+}
+.product-item:hover {
+    color: #034e3f;
+}
+/* Hiển thị chữ trong icon */
+.product-item {
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    overflow: hidden; /* Hide overflow of child elements */
+    transition: background-color 0.3s ease;
+}
+
+.product-item .product-info {
+    position: relative;
+}
+
+.product-item .product-price {
+    margin-top: 10px;
+    display: block;
+    opacity: 1; /* Default to show price */
+    transition: opacity 0.1s ease; /* Transition effect */
+}
+
+.product-item .product-actions {
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    transform: translateX(-50%);
+    display: none; /* Default to hide action icons */
+}
+
+.product-item:hover .product-price {
+    opacity: 0; /* Hide price on hover */
+}
+
+.product-item:hover .product-actions {
+    display: flex; /* Show action icons on hover */
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.product-item .product-actions .action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.product-item .product-actions .action i {
+    font-size: 15px;
+    padding: 5px; /* Padding for icon */
+    border: 1px solid #034e3f; /* Square border for icon */
+    transition: all 0.3s ease;
+    color: #034e3f;
+}
+
+.product-item .product-actions .action span {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.product-item .product-actions .action .tooltip {
+    visibility: hidden;
+    width: 120px;
+    height: 120px;
+    background-color: #656565;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.product-item .product-actions .action:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.product-item .action:hover i {
+    background-color: #034e3f; /* Background color for icon */
+    color: #ffffff;
+    padding: 5px; /* Keep padding consistent to prevent stretching */
+}
+
+#nuoc-hoa:target {
+    color: #034e3f;
+}

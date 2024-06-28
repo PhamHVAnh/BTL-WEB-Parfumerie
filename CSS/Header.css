@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #034e3f;
+    padding: 15px 30px;
+    color: white;
+}
+
+#Timkiem {
+    display: flex;
+    align-items: center;
+}
+
+#Timkiem input {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 3px;
+    flex: 1;
+    
+}
+
+#Timkiem button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    left: 240px; 
+}
+#logo {
+    text-align: center;
+}
+
+#logo h1 {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+#logo p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#user-cart {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#user-cart li {
+    margin-left: 20px;
+    position: relative;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+#user span {
+    margin-right: 10px;
+}
+
+#user a {
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#cart {
+    position: relative;
+    cursor: pointer;
+}
+
+/* #cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+} */
+
+.Thongtinlogin {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    border: 1px solid rgb(223, 221, 221);
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+    z-index: 1000;
+    width: 75%;
+    left: 0;
+    text-align: left;
+}
+/* .Thongtinlogin li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+} */
+/* #user:hover .Thongtinlogin {
+    display: block;
+} */
+
+.Thongtinlogin li a:hover {
+    color: rgb(27, 70, 105); 
+}
+#user:hover .Thongtinlogin {
+    display: block;
+}
+
+#user:hover {
+    border-right: none;
+}
+
+#menu ul,li{
+    display: flex;
+    margin: 0;
+    padding:0;
+    border-right:none;
+}
+#menu ul>li{
+    position: relative;
+    padding: 20px 25px;
+    color: rgb(7, 7, 7);
+
+}
+#menu {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    
+}
+
+
+#menu ul li ul li {
+    display: block; 
+    padding: 20px 30px;
+    border-right: none; 
+}
+
+#menu ul li ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    width: auto;
+    white-space: nowrap;
+}
+#menu ul li:hover ul{
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: black;  
+}
+a:hover{
+    color: #094b3e;
+}
+.menu-brands {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    max-width: 10px; 
+    margin: 0 auto; 
+}
+.menu-brands li {
+    list-style: none;
+    padding: 5px 15px;
+    text-align: left;
+    font-size: 14px; 
+}
+.menu-brands-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.menu-brands {
+    column-count: 5; /* Số cột mong muốn */
+    column-gap: 1px; /* Khoảng cách giữa các cột */
+    max-width: 900px; /* Đặt giới hạn chiều rộng phù hợp */
+}
+.menu-brands li {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer {
+    background-color: #034e3f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    width: 22%;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section i {
+    font-size: 40px;
+    margin: 10px 10px 0 0;
+}
+
+.social-media a {
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    margin: 10px 10px 0 0;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffd700;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 20px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #032b25;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    height: 40px;
+}
+
+.newsletter button:hover {
+    background-color: #0c0e0d;
+}
+
+.footer-bottom {
+    background-color: #05352e;
+    padding: 10px 0; /* Increase padding to add more space */
+    color: #ddd;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: -20px; /* Add margin to separate from footer-middle */
+    clear: both; /* Ensure footer-bottom clears previous floats */
+}
+/* liên hệ */
+.phone {
+    position: fixed;
+    bottom: 25px;
+    right: 25px; /* Để tạo một khoảng cách từ cạnh phải */
+    font-size: 35px;
+}
+.Zalo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px; /* Để tạo một khoảng cách từ cạnh phải */
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+.messenger{
+     position: fixed;
+    bottom: 25px;
+    right: 25px; /* Để tạo một khoảng cách từ cạnh phải */
+    font-size: 35px;
+    padding-bottom: 100px;
+}
+.show {
+    display: none; /* Mặc định ẩn số điện thoại */
+    position: absolute;
+    top: -30px; /* Điều chỉnh vị trí lên trên để hiển thị chữ số */
+    right: 0;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000; /* Để hiển thị trên cùng */
+}
+
+#hotline:hover .show {
+    display: block; 
+}

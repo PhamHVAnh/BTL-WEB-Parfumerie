@@ -1,0 +1,306 @@
+.breadcrumb {
+    font-size: 14px;
+    margin-top: 60px;
+    background-color: rgba(248, 248, 248, 0.632);
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px; /* Adjust vertical padding */
+    margin-left: 120px;
+}
+
+.product-container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+
+}
+
+.product-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-image img {
+    width: 90%;
+}
+
+.product-details {
+    flex: 1;
+    padding-left: 20px;
+    padding-bottom: -200px;
+    /* margin-bottom: 200px; */
+}
+
+.price {
+    font-size: 24px;
+    color: #034e3f;
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.text1{
+    width: 6.5%;
+    border: 1px solid #96929297;
+    padding: 5px 5px 5px 5px;
+}
+.product-options {
+    margin: 10px 0;
+}
+
+.product-options button {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.volume-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.volume-options button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    flex: 1;
+}
+.volume-option.active {
+    background-color: #034e3f;
+    color: #ffffff;
+}
+
+.quantity-btn:focus {
+    background-color: #034e3f;
+    color: #ffffff;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.quantity {
+    padding: 0 10px;
+}
+
+.purchase-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.purchase-options button {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+    margin-right: 5px;
+}
+.buy-now {
+    background-color: #034e3f;
+}
+
+
+.add-to-cart {
+    background-color: #034e3f;
+}
+  /* bảng giới thiệu sp */
+.container {
+    border: 1px solid rgb(169, 163, 163);
+    max-width: 69%;
+    padding: 10px;
+    margin:10px 60px ;
+}
+.content{
+    background-color: rgba(248, 248, 248, 0.632);
+    box-shadow: 0 0px 50px rgba(147, 146, 146, 0.632)
+}
+
+  .header {
+    background-color: #034e3f;
+    padding: 10px;
+
+  }
+  .header ul li {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .header ul {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 0;
+  }
+  
+  .header ul li {
+    list-style-type: none;
+    margin: 0 10px;
+  }
+  
+  .header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  .panel{
+    margin: -290px 1020px 0px ;
+    padding-bottom: px;
+  }
+/* lieen quan */
+.List-nh{
+    border: 1px solid rgba(183, 181, 181, 0.632);
+    margin:5px 60px 50px ;
+    padding: 5px;
+    width: 90%;
+}
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px; /* Reduce gap to make items closer */
+    margin-top: 20px;
+}
+.product-item {
+    position: relative;
+    padding: 15px; /* Reduce padding to make images larger */
+    text-align: left; /* Center text */
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.product-item img {
+    width: 100%; /* Ensure images take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are displayed as block elements */
+    margin-bottom: 10px; /* Space between image and title */
+}
+.product-item h3 {
+    font-size: 13px;
+    height: 3em; /* Điều chỉnh chiều cao tùy theo độ dài tiêu đề bạn muốn */
+    overflow: hidden; /* Đảm bảo rằng tiêu đề không vượt quá chiều cao cố định */
+    text-overflow: ellipsis; /* Thêm dấu ba chấm nếu tiêu đề quá dài */
+    display: -webkit-box; /* Cho phép sử dụng thuộc tính -webkit-line-clamp */
+    -webkit-line-clamp: 1; /* Hiển thị tối đa 2 dòng, điều chỉnh số dòng tùy thích */
+    -webkit-box-orient: vertical;
+}
+
+.product-item span {
+    color: #034e3f; /* Màu xanh lá cho giá */
+    margin-top: 10px; /* Khoảng cách giữa <p> và <span> */
+    text-align: left;
+    width: 100%; /* Đảm bảo tất cả các <span> có cùng độ rộng */
+    display: block;
+    font-size: 15px;
+    
+}
+.product-item:hover {
+    color: #034e3f;
+}
+/* Hiển thị chữ trong icon */
+.product-item {
+    position: relative;
+    padding: 20px;
+    text-align: left;
+    overflow: hidden; /* Hide overflow of child elements */
+    transition: background-color 0.3s ease;
+}
+
+.product-item .product-info {
+    position: relative;
+}
+
+.product-item .product-price {
+    margin-top: 10px;
+    display: block;
+    opacity: 1; /* Default to show price */
+    transition: opacity 0.1s ease; /* Transition effect */
+}
+
+.product-item .product-actions {
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    transform: translateX(-50%);
+    display: none; /* Default to hide action icons */
+}
+
+.product-item:hover .product-price {
+    opacity: 0; /* Hide price on hover */
+}
+
+.product-item:hover .product-actions {
+    display: flex; /* Show action icons on hover */
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.product-item .product-actions .action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.product-item .product-actions .action i {
+    font-size: 15px;
+    padding: 5px; /* Padding for icon */
+    border: 1px solid #034e3f; /* Square border for icon */
+    transition: all 0.3s ease;
+    color: #034e3f;
+}
+
+.product-item .product-actions .action span {
+    display: block;
+    font-size: 10px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.product-item .product-actions .action .tooltip {
+    visibility: hidden;
+    width: 120px;
+    height: 120px;
+    background-color: #656565;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.product-item .product-actions .action:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.product-item .action:hover i {
+    background-color: #034e3f; /* Background color for icon */
+    color: #ffffff;
+    padding: 5px; /* Keep padding consistent to prevent stretching */
+}

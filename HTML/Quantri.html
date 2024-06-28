@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Quantri.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <title>Parfumerie.vn</title>
+    <link rel="shortcut icon" href="../IMG/1.jpg" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <h1>PARFUMERIE</h1>
+            <p>Magic Of Your Emotions</p>
+        </div>
+        <div id="Timkiem">
+            <div class="function-search">
+                <input type="text" id="search" placeholder="Tìm kiếm ..." onkeyup="Search(event)"><button><i class="fa-solid fa-magnifying-glass" style="color: #5e5e5e;"></i></button>
+            </div>
+        </div>
+        <div class="shutdown">
+
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i><a href="https://www.facebook.com/quochuy.doan.75248"> anhp03994@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone-volume"></i>0888.666.888</li>
+                <li><i class="fa-solid fa-right-from-bracket"></i><a href="DangNhap.html"> Đăng Xuất</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="header-function">
+        <h3 style="color: #ffffff;">----------  ADMIN ---------</h3>
+        <ul>
+            <li style="background-color: #ffffff;"><a style="color: #034e3f;" href="Quantri.html">DANH MỤC SẢN PHẨM</a></li>
+            <li><a href="#">NHÀ CUNG CẤP</a></li>
+            <li><a href="#">KHÁCH HÀNG</a></li>
+            <li><a href="#">HOÁ ĐƠN</a></li>
+            <li><a href="#">NHÂN VIÊN</a></li>
+        </ul>
+    </div>
+    
+    <div class="main">
+        
+        <div class="caption">
+            <span>Danh Sách Sản Phẩm</span>
+        </div>
+        <div class="main-data">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên</th>
+                        <th>Danh mục</th>
+                        <th>Dung tích(ml)</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Ảnh</th>
+                        <th colspan="2">Tác Vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Roja Dove Amber Aoud Parfum</td>
+                        <td>Nước hoa unisex</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>15.500.000đ</td>
+                        <td><img src="../IMG/sp003.png" width="150px" alt="ảnh"></td>
+                        <td>
+                            <div class="action-container">
+                                <button type="button" onclick="editData(this)"><i class="fa-duotone fa-pen-to-square"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="action-container">
+                                <button type="button" onclick="deleteData(this)"><i class="fa-solid fa-trash-can-xmark"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="main-function">
+            <div class="function">
+                <button class="addData" onclick="addData()">Thêm Dữ Liệu</button>
+                <div id="formaddData" class="form-container">
+                    <form id="formData">
+                        <ul>
+                            <li>  <button class="close" onclick="closeForm()">Đóng</button></li>
+                            <li>
+                                <label for="STT">STT</label>
+                                <input type="text" id="STT" placeholder="STT" required>
+                            </li>
+                            <li>
+                                <label for="Ten">Tên</label>
+                                <input type="text" id="Ten" placeholder="Tên sản phẩm " maxlength="50" required>
+                            </li>
+                            <li>
+                                <label for="DanhMuc">Danh Mục</label>
+                                <select id="DanhMuc" required>
+                                    <option value="">Chọn danh mục</option>
+                                    <option value="Nước hoa nam">Nước hoa nam</option>
+                                    <option value="Nước hoa nữ">Nước hoa nữ</option>
+                                    <option value="Nước hoa unisex">Nước hoa unisex</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="Dungtinh">Dung tích</label>
+                                <input type="text" id="DungTinh" placeholder="Dung tích" maxlength="3" required>
+                            </li>
+                            <li>
+                                <label for="SoLuong">Số Lượng</label>
+                                <input type="text" id="SoLuong" placeholder="Số Lượng" maxlength="3" required>
+                            </li>
+                       
+                            <li>
+                                <label for="Gia">Giá</label>
+                                <input type="text" id="Gia" placeholder="Nhập Giá" maxlength="50" required>
+                            </li>
+                            <li>
+                                <label for="IMG">Ảnh</label>
+                                <input type="file" id="IMG">
+                            </li>
+                            <li>  <button type="button" onclick="add()">Thêm</button></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/Quantri.js"></script>
+</body>
+</html>

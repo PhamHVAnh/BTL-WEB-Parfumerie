@@ -1,0 +1,100 @@
+
+/* ĐĂNG NHẬP */
+.login{
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container { /*KHUNG*/
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(40, 228, 140, 0.299);
+    position: relative;
+    width: 40%;
+    height: 70%;
+    
+}
+
+.breadcrumb {
+    width: 900px;
+    height: 1000x;
+    font-size: 15px;
+    margin-top: 70px;
+    background-color: rgba(255, 255, 254, 0.838);
+    margin-left: 100px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.login-container .social-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-left: 1px solid white;
+    text-decoration: none;
+}
+
+.login-container .social-buttons a.facebook {
+    background-color: #3b5998;
+}
+
+.login-container .social-buttons a.google {
+    background-color: #db4437;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom:30px;
+    border: 1px solid #ced4da;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.login-container button:hover {
+    background-color: #00332e;
+}
+
+.login-container p {
+    text-align: left;
+}
+
+.login-container p a {
+    color: #004d40;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+
